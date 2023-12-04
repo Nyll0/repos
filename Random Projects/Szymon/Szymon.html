@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header-container">
+  <div id="main">
+    <img id="broda" src="img/broda.png" alt="broda"/>
+    <img id="broda2" src="img/broda2.png" alt="broda"/>
+    <img id="ucho" src="img/ucho.png" alt="ucho"/>
+    <img id="ucho2" src="img/ucho2.png" alt="ucho"/>
+    <img id="usta1" src="img/usta1.png" alt="usta1">
+    <img id="usta2" src="img/usta2.png" alt="usta2">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+  </div>
+
+  <div class="column" style="background-color:#bbb;">
+
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <button onclick="document.getElementById('broda').style.opacity='0'; document.getElementById('broda2').style.opacity='0'; document.getElementById('ucho').style.opacity='0'; document.getElementById('ucho2').style.opacity='0'; document.getElementById('usta1').style.opacity='0'; document.getElementById('usta2').style.opacity='0';">Ukryj</button>
+
+    
+    <button onclick="document.getElementById('broda').style.opacity='1'; document.getElementById('broda2').style.opacity='0';">Show</button>
+
+    <button onclick="document.getElementById('broda2').style.opacity='1'; document.getElementById('broda').style.opacity='0';">Zmień</button>
+
+    <button onclick="document.getElementById('ucho').style.opacity='1'; document.getElementById('ucho2').style.opacity='1';">Uszy</button>
+
+    <button onclick="document.getElementById('usta1').style.opacity='1'; document.getElementById('usta2').style.opacity='1';">usta</button>
+</div>
+</body>
+</html>
+
+

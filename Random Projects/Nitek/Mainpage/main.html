@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikołaj Nitka
+  </title>
+</head>
+<body>
+  <div class="image-tiles">
+        <div class="image-tile">
+          <img src="../images/img0.jpeg" alt="Image 0">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img1.jpeg" alt="Image 2">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img3.jpeg" alt="Image 3">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img4.jpeg" alt="Image 4">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img5.jpeg" alt="Image 5">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img6.jpeg" alt="Image 6">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img7.jpeg" alt="Image 7">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img8.jpg" alt="Image 8">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img9.jpeg" alt="Image 9">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img10.jpeg" alt="Image 10">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img11.jpeg" alt="Image 11">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img12.jpeg" alt="Image 12">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img13.jpeg" alt="Image 13">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img14.jpeg" alt="Image 14">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img15.jpeg" alt="Image 15">
+        </div>
+        <div class="image-tile">
+          <img src="../images/img16.jpeg" alt="Image 16">
+        </div>
+
+      </div>
+  </div>
+  <script>
+    // Array of image sources
+    var imageSources = ["image1.jpg", "image2.jpg", "image3.jpg"];
+
+    // Shuffle the array randomly
+    imageSources.sort(function() { return 0.5 - Math.random() });
+
+    // Update the src attribute of the images
+    document.getElementById("img1").src = imageSources[0];
+    document.getElementById("img2").src = imageSources[1];
+    document.getElementById("img3").src = imageSources[2];
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{
+  color: olivedrab;
+  font-size: 30px;
+}
+
+div{
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid;
+  border-collapse: collapse;
+  align-content: center;
+}
+h1 {
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+
+.topic{
+  background-color: lightgray;
+}
+
+.img {
+  margin-top: 100px;
+  padding: 5px;
+  border: 1px solid;
+  box-sizing: content-box;
+  width: 30%;
+}
+
+.img2{
+  margin-top: 50px;
+  padding: 5px;
+  box-sizing: content-box;
+  
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption{
+  font-size: small;
+  
+}
+

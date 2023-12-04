@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marek Czapiewski</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+ rel="stylesheet"> 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="hContainer">
+      <h1 alt="logo" class="logo"> Marek Czapiewski</h1>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">DE</a></li>
+          <li><a href="#">PL</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="slideshow-container">
+    <img src="img/img1.jpg" class="slide">
+    <img src="img/img2.jpg" class="slide">
+    <img src="img/img3.jpg" class="slide">
+    <img src="img/img4.jpg" class="slide">
+</div>
+
+  <footer>
+    <div class="fContainer">
+      <a id="location">Marek Czapiewski <br>Münster</a>
+      <a id="contact">Contact: <br> marekczap@gmail.com <br> +48502562321</a>
+      <div id="links">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript code to create the slideshow -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const slideInterval = setInterval(nextSlide, 3000);
+
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    nextSlide();
+  });
+</script>
+</body>
+</html>
